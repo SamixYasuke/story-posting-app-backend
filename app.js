@@ -83,7 +83,7 @@ app.use((err, req, res, next) => {
 const connectServer = async () => {
   try {
     await mongoose.connect(
-      "mongodb://127.0.0.1:27017/SamixxStory"
+      "mongodb+srv://samueladekolu4:aaaabbbb@cluster0.ovvpyeh.mongodb.net/AnimeBlog"
     );
     console.log("Connected to MongoDB");
     app.listen(PORT, () => {
